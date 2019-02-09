@@ -1,0 +1,459 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+<title>PWSA - Pittsburgh Water and Sewer Authority</title>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="-1" />
+<meta name="keywords" content="Pittsburgh" />
+<meta name="description" content="" />
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script type="text/javascript" src="lib/js/dropdown-menu.min.js"></script>
+<script type="text/javascript" src="lib/js/pwsa-scripts.js"></script>
+
+<link rel="stylesheet" type="text/css" href="lib/css/fonts/fontstyle.css" />
+<link rel="stylesheet" type="text/css" href="lib/css/pwsa-structure.css" />
+<link rel="stylesheet" type="text/css" href="lib/css/pwsa-type.css" />
+<link rel="stylesheet" type="text/css"href="lib/css/dropdown-menu.css" />
+<link rel="stylesheet" type="text/css"href="lib/css/pwsa-slider.css" />
+
+<!---- THESE STYLES ARE FOR THE TEMP ALERT BOX ---->
+<style>
+    .alert{
+        background-color: #EB6361;
+        padding: 10px;
+        margin: 5px 5px;
+        font-size: 1.3rem;
+        color: #fff;
+        overflow: hidden;
+        width: 100%;
+        line-height: 120%;
+    }
+    .alert a{
+        color: #fff;
+        margin: 0 0 0 0;
+        font-size: 1.3rem;
+        text-decoration: underline;
+    }
+    span.small-text{
+        color: #fff;
+        margin: 0 0 0 15px;
+        font-size: 1.1rem !important;
+    }
+</style>
+<!------------------------------------------------->
+
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="container">
+
+<div id="logoHeader">
+   
+<a class="imagefade" href="http://pgh2o.com"><img src="images/pwsa-new.png" /></a>
+<!--<div id="tagLine">PWSA PROVIDES THE BEST QUALITY WATER AT THE LOWEST POSSIBLE COST.</div>-->
+<div id="payButton">PAY YOUR BILL</div>
+<div id="probButton">REPORT A PROBLEM</div>
+<div id="socialIcons"><a href="https://twitter.com/pgh2o">l</a><a href="press">r</a></div>
+<div id="searchBox">
+<form id="searchthis" action="search" style="display:inline;" method="get">
+<input id="search-box" name="q" size="40" type="text" placeholder="Search..."/>
+<input id="search-btn" value="GO" type="submit"/>
+</form>
+</div>
+
+<!---- TEMP ALERT BOX ---
+<div class="alert">Please visit <a href="http://www.pgh2o.com/boilwater">www.pgh2o.com/boilwater</a> for more information on the Boil Water Advisory affecting northern neighborhoods in the City of Pittsburgh, the Borough of Millvale, and Reserve Township</div>
+<!------------------------>
+</div>
+
+    
+<div id="navBox">
+	<ul id="navMenu" class="dropdown-menu" data-options='{"sub_indicators":"true","drop_shadows":"true"}'>
+		<li><a href="http://pgh2o.com" class="topLink">HOME</a></li>
+		<li>
+			<a href="" class="topLink">WHO WE ARE</a>
+			<ul>
+				<li><a href="board">PWSA Board</a></li>
+				<li><a href="divisions">Divisions</a></li>
+				<li><a href="staff">Staff</a></li>
+				<li><a href="history">History</a></li>
+				<li><a href="finance">Finance</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="" class="topLink">WHAT WE DO</a>
+			<ul>
+				<li><a href="quality-drinking-water">Water Quality Reports</a></li>
+				<li><a href="sewer-conveyance">Sewer Conveyance</a></li>
+				<li><a href="stormwater">Storm Water</a></li>
+                                <!--
+				<li><a href="maintenance">Maintenance</a></li>
+                                -->
+                                <li><a href="project-updates">Project Info</a></li>
+                                <li><a href="gi-overview">Green Infrastructure Overview</a></li>
+                                <li><a href="gi-grant-program">Green Infrastructure Grant Program Overview</a></li>
+                                <li><a href="lead-facts">Lead Facts</a></li>
+                                <li><a href="projects">Projects</a></li>
+                                <!--
+                                <li><a href="http://67.227.153.116/" target="_blank">Performance Dashboard</a></li>
+                                -->
+			</ul>
+		</li>
+		<li>
+			<a href="#" class="topLink">CUSTOMERS</a>
+			<ul>
+				<li><a href="pay">Pay Your Bill</a></li>
+				<li><a href="rates">Rates</a></li>
+                                <li><a href="CAP">Customer Assistance Program</a></li>
+				<li><a href="customer-rights">Customer Rights</a></li>
+				<li><a href="rules">Rules & Regulations</a></li>
+				<li><a href="dye-testing">Dye Testing</a></li>
+                                <li><a href="backflow">Backflow</a></li>
+				<li><a href="FAQ">Customer FAQs</a></li>
+				<li><a href="forms">Forms</a></li>
+                                <li><a href="lead-facts">Lead Facts</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="" class="topLink">DEVELOPERS</a>
+			<ul>
+				<li><a href="developer-manual">Developer Manual</a></li>
+				<li><a href="forms-permits">Forms & Permits</a></li>
+				<li><a href="maps">Maps</a></li>
+				<!-- <li><a href="tap-procedure">Tap Procedure Manual</a></li> -->
+				<li><a href="building-permits">Building Permits</a></li>
+				<li><a href="street-permits">Street Permits</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="" class="topLink">BUSINESS</a>
+			<ul>
+				<li><a href="doing-business">Doing Business with PWSA</a></li>
+                                <li><a href="equalopportunity">Equal Opportunity Contracting Program</a></li>
+                <!--
+				<li><a href="capital-projects">Capital Projects</a></li>
+				<li><a href="pennvest-projects">PennVEST Projects</a></li>
+                -->
+                                <li><a href="http://apps.pittsburghpa.gov/pwsa/2017-2021_CIP_1.2017.pdf" target="_blank">2017-2021 CIP</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="" class="topLink">MEDIA</a>
+			<ul>
+				<li><a href="media-kit">Media Kit</a></li>
+				<li><a href="press">Press Releases & Archives</a></li>
+				<li><a href="project-updates">Construction Outages</a></li>
+				<li><a href="annual-reports">Annual Reports</a></li>
+                                <li><a href="communitymeetings">Community Meetings</a></li>
+                                <!--
+				<li><a href="newsletters">Monthly Newsletters</a></li>
+                                -->
+			</ul>
+		</li>
+		<li>
+			<a href="" class="topLink">LEARNING CENTER</a>
+			<ul>
+				<li><a href="tours">Tours</a></li>
+                                <!--
+				<li><a href="speaker-bureau">Speaker Bureau</a></li>
+                                -->
+				<li><a href="regulations">Regulations</a></li>
+				<li><a href="source-water-protection">Source Water Protection</a></li>
+				<li><a href="fluoride">Fluoride</a></li>
+				<li><a href="Edu-Videos">Educational Videos</a></li>
+				<li><a href="reports">Reports</a></li>
+                                <!--
+				<li><a href="kids">For Kids</a></li>
+                                -->
+				<li><a href="partner-links">Partner Links</a></li>
+                                <!--
+                                <li><a href="Find-Your-Sewershed">Find Your Sewershed</a></li>
+                                -->
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class="pageHead clearfix">
+<div class="header">The Pittsburgh Water and Sewer Authority Board</div>
+<div class="social">
+<div id="tweet">
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="pgh2o">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+<div id="like">
+<div class="fb-like" data-colorscheme="light" data-layout="button_count" data-action="recommend" data-show-faces="false" data-send="false"></div>
+</div>
+</div>
+</div>
+
+<div class="twoCol clearfix">
+<div id="mainContent">
+
+<div class="bodyCopy">
+<div>
+<hr />
+<p><strong>All PWSA Board meetings are held in the Board Room, on the 2nd floor of 1200 Penn Avenue, Pittsburgh, PA 15222</strong></p>
+<hr />
+</div>
+<h4>Officers of the Board</h4>
+<ul>
+<li><strong>Paul Leger&nbsp;</strong>
+<ul>
+<li>Chairperson<br />
+&nbsp;</li>
+</ul>
+</li>
+<li><strong>Margaret Lanier</strong>
+<ul>
+<li>Vice Chairperson<br />
+&nbsp;</li>
+</ul>
+</li>
+<li><strong>Jim Turner</strong>
+<ul>
+<li>Secretary<br />
+&nbsp;</li>
+</ul>
+</li>
+<li><strong>Deb Gross</strong>
+<ul>
+<li>Assistant Secretary</li>
+</ul>
+</li>
+</ul>
+<h4>Board members</h4>
+<ul>
+<li>Chat&oacute;n Turner</li>
+</ul>
+<hr />
+<h4>AGENDA</h4>
+<p style="margin-left:.25in;"><span style="color: rgb(0, 255, 0); font-size: 14px;">*<em> </em></span><em>Notice of ten (10) days prior to date of regular meeting must be given to the<br />
+Executive Director or the Chairman in order to address the Board.</em></p>
+<p>&nbsp;</p>
+<ol>
+<li>Roll Call</li>
+<li>Pledge of Allegiance</li>
+<li>Call for Public Comment <span style="font-size: 14px;"><span style="color:#00ff00;">*</span></span></li>
+<li>Approval of Minutes of the Previous Meeting</li>
+<li>Finance &amp; Engineering Reports</li>
+<li>Resolutions</li>
+<li>Report of Executive Director</li>
+<li>Old Business</li>
+<li>New Business</li>
+<li>Adjournment</li>
+</ol>
+<p>&nbsp;</p>
+<hr />
+<h3><strong>2019 Board Meetings</strong></h3>
+<div>
+<div><strong>January 25</strong></div>
+<ul>
+<li><a href="https://linkprotect.cudasvc.com/url?a=http%3a%2f%2fapps.pittsburghpa.gov%2fredtail%2fimages%2f4745_January252019-AGENDArev.pdf&amp;c=E,1,V4Qz8M8cNq7U-PaXkRowCSy1BDD_qonIXx9m7FYDXvE8iPPGmTYBs_QVBTaG78dOSAMcMsua-AFyPbw-QVb7PI4wFVNbHIxaW5MN1N6-&amp;typo=1">Agenda</a></li>
+<li>Minutes</li>
+</ul>
+<div>&nbsp;</div>
+<div><strong>February 4 Special Board Meeting - 11:00 a.m.</strong></div>
+<div>&nbsp;</div>
+<div><strong>February 22</strong></div>
+<div><strong>March 22</strong></div>
+<div><strong>April 26</strong></div>
+<div><strong>May 24</strong></div>
+<div><strong>June 28</strong></div>
+<div><strong>July 26</strong></div>
+<div><strong>September 27</strong></div>
+<div><strong>October 25</strong></div>
+<div><strong>November 22</strong></div>
+<div><strong>December 20</strong></div>
+<div>&nbsp;</div>
+<div><em>Board meetings begin at 10:00 a.m. every fourth Friday of the month, with exceptions for holidays.</em></div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+</div>
+<hr />
+<p><br />
+&nbsp;</p>
+<table border="1" cellpadding="1" cellspacing="1" style="width: 400px">
+<tbody>
+<tr>
+<td colspan="2">
+<h3>2018 Board Meetings</h3>
+</td>
+</tr>
+<tr>
+<td>
+<div>January 26</div>
+</td>
+<td>
+<div><a href="https://web.archive.org/web/20181105195539/https://linkprotect.cudasvc.com/url?a=http://apps.pittsburghpa.gov/redtail/images/1555_012618AGENDAFINAL_UPDATED.PDF&amp;c=E,1,50q6J3LvEEEQrfnrVTvwRtZ9AQoC90xEwYQ2_x0RyBjlOd_C2bxy1oQ7Q8to0XunPukvzev1THjowryXDYGbW9V7icLKe3zQ0ATSy7bU4Q,,&amp;typo=1">Agenda</a></div>
+<div><a href="https://web.archive.org/web/20181105195539/http://apps.pittsburghpa.gov/redtail/images/2063_01262018SignedMinutes.pdf">Minutes</a></div>
+</td>
+</tr>
+<tr>
+<td>
+<div>February 23</div>
+</td>
+<td>
+<div><a href="https://web.archive.org/web/20181105195539/http://apps.pittsburghpa.gov/redtail/images/1787_February232018_AGENDA_Final.pdf">Agenda</a></div>
+<div><a href="https://web.archive.org/web/20181105195539/https://linkprotect.cudasvc.com/url?a=http://apps.pittsburghpa.gov/redtail/images/2099_February232018Signed.pdf&amp;c=E,1,XFDRACGlfUUHm7Lp3joxUF03GytyZNjfBcnZGmMaFot8Tmeb1uRK_k071ImU1_1Fa8kshp_wxROP0aYHK_6aU5W-8WHVPSfB1cYFBAtXlG8WNCWB_OnB592ITA,,&amp;typo=1">Minutes</a></div>
+</td>
+</tr>
+<tr>
+<td>
+<div>March 23</div>
+</td>
+<td>
+<div><a href="https://web.archive.org/web/20181105195539/https://linkprotect.cudasvc.com/url?a=http://apps.pittsburghpa.gov/redtail/images/2094_March2018AgendaMinutesandReports.pdf&amp;c=E,1,e0dc5aduIRgAToqPBlufMmTASn06PXaS8bOWE_T1_oOemgxRzsdrJU5f7nFEVjAjc3QS0bKopiLpFBhRsTb7uRnxYjrKvx8nPrOEinZCcTWJ72qx8dPI&amp;typo=1">Agenda</a></div>
+<div><a href="https://web.archive.org/web/20181105195539/http://apps.pittsburghpa.gov/redtail/images/2369_March232018MinutesSigned.pdf">Minutes</a></div>
+</td>
+</tr>
+<tr>
+<td>
+<div>April 20</div>
+</td>
+<td>
+<div><a href="https://web.archive.org/web/20181105195539/http://apps.pittsburghpa.gov/redtail/images/2370_AprilBoardMeeting.pdf">Agenda&nbsp;</a></div>
+<div><a href="https://web.archive.org/web/20181105195539/https://linkprotect.cudasvc.com/url?a=http%3a%2f%2fapps.pittsburghpa.gov%2fredtail%2fimages%2f2723_April202018SignedMinutes.pdf&amp;c=E,1,s85onsvbb2lGWXzuuCoDa91u7FxS30_DoXLsPru2jxD9tPii_VpgpDdaEhQI_ncUPqpO7y_QQ11jlY0C7dzXIAVnI2d7zv_wRToR7AimIcI,&amp;typo=1">Minutes</a></div>
+</td>
+</tr>
+<tr>
+<td>
+<div>May 18</div>
+</td>
+<td>
+<div><a href="https://web.archive.org/web/20181105195539/https://linkprotect.cudasvc.com/url?a=http%3a%2f%2fapps.pittsburghpa.gov%2fredtail%2fimages%2f2640_May182018-AGENDArev.pdf&amp;c=E,1,Ei-LQ_18ls_pO0vTbHhxsjDW8I52JWOmed6ErvIMUZXNYdCIsh4cek0qUScxBv9Gmka7LIBpA7lBeSVIKlrVcmU-sMA0LxqMOTScbNV8PQTGF_ZO&amp;typo=1">Agenda&nbsp;</a></div>
+<div><a href="https://web.archive.org/web/20181105195539/https://linkprotect.cudasvc.com/url?a=http%3a%2f%2fapps.pittsburghpa.gov%2fredtail%2fimages%2f2941_MinutesofMay182018BoardMeeting.pdf&amp;c=E,1,5TpFrm9vgDp-LVErfh3nJyz73Y4LaLcInFHIZ43VGWPNP-jP6hSExUu-2IlP9GhXo-z7_4gUBQVmjWOL8Ynl38rGd5M5V9Hf4sKgEUBJRjtk2kv37wNf&amp;typo=1">Minutes</a></div>
+</td>
+</tr>
+<tr>
+<td>
+<div>June 22</div>
+</td>
+<td>
+<div><a href="https://web.archive.org/web/20181105195539/https://linkprotect.cudasvc.com/url?a=http%3a%2f%2fapps.pittsburghpa.gov%2fredtail%2fimages%2f3024_June222018-AGENDAUpdatedFinal.pdf&amp;c=E,1,p5p9QKt98l70CT-uZLbxfRFVLC9FmVyS4OxOXHYLddZHFHbktQgHv33aVBBlIqTrG_XEAs2-wkoD1klneDEc9ADZFXgBICUaT2a82bdZeGRXY7loY75c964,&amp;typo=1">Agenda&nbsp;</a></div>
+<div><a href="https://web.archive.org/web/20181105195539/https://linkprotect.cudasvc.com/url?a=http%3a%2f%2fapps.pittsburghpa.gov%2fredtail%2fimages%2f3382_June222018SignedMinutes.pdf&amp;c=E,1,rRb1v6S5ei7MM5SYT6l_Aft6PaPQjpaWYqEIEXD8HMwYXCg_m8F2TEFL1p49Npwgq0h08hyJE0M4z7xaglIQ4C1S106ZVnYbCj60R64_3g,,&amp;typo=1">Minutes</a></div>
+</td>
+</tr>
+<tr>
+<td>
+<div>July 10 Special Meeting</div>
+</td>
+<td>
+<div><a href="https://web.archive.org/web/20181105195539/http://apps.pittsburghpa.gov/redtail/images/3169_July_10_2018_-_SPECIAL_Board_Meeting_Agenda.pdf">Agenda&nbsp;</a></div>
+<div><a href="https://web.archive.org/web/20181105195539/https://linkprotect.cudasvc.com/url?a=http%3a%2f%2fapps.pittsburghpa.gov%2fredtail%2fimages%2f3383_July102018SpecialBoardMinsSigned.pdf&amp;c=E,1,KUySbTj8PMZ1XHE5ZLjdPtV8UEKbxeaI_QYEynfn6zudiFj6hXFU1HrYcf4yWaoNANgsA35xAPuDi19a9DUGw3ARGlRKmHN6sNRtbFJtqbtVOHP_aJS2gow,&amp;typo=1">Minutes</a></div>
+</td>
+</tr>
+<tr>
+<td>
+<div>July 27</div>
+</td>
+<td>
+<div><a href="https://web.archive.org/web/20181105195539/https://linkprotect.cudasvc.com/url?a=http%3a%2f%2fapps.pittsburghpa.gov%2fredtail%2fimages%2f3355_July272018-AGENDArev.pdf&amp;c=E,1,AHAVI0c8N_VUjW3WvwfQmtF3H5ermWEiqTHYlY3to8PB5HkvZGTyFrymFsoY-91NeYt6BAq1waneXW088S8fQipyvx8vjHdhYB-3N-UjUUF82cD2Lz4R&amp;typo=1">Agenda</a></div>
+<div><a href="https://web.archive.org/web/20181105195539/https://linkprotect.cudasvc.com/url?a=http%3a%2f%2fapps.pittsburghpa.gov%2fredtail%2fimages%2f3996_July272018RegularBoardMinsSigned.pdf&amp;c=E,1,sk0N66XQol0ettmsyYdjff1aOtHIYpgT4kjo8HExenfklrR9MNOvh4IG4DQdINaC5plNajFKKkGqdfBE895Dr_oVab1m-lej24TYnTvbP75E7e0Jt4URJ1Y_&amp;typo=1">Minutes</a></div>
+</td>
+</tr>
+<tr>
+<td>
+<div>August 15 Special Meeting</div>
+</td>
+<td>
+<div><a href="https://web.archive.org/web/20181105195539/http://apps.pittsburghpa.gov/redtail/images/3489_August15SpecialMeeting-AgendaREV.PDF">Agenda&nbsp;</a></div>
+<div><a href="https://web.archive.org/web/20181105195539/https://linkprotect.cudasvc.com/url?a=http%3a%2f%2fapps.pittsburghpa.gov%2fredtail%2fimages%2f3995_August152018SpecialBoardMtg.pdf&amp;c=E,1,BE5NS_gAQFq3oIqKXhQOo3lHINGbVADIRM2vs3BpWp2wlbn6motbJx2MRoG0NHrOIgR9ECrKazRnpylC5hcCBPJocZTzlcSV3br-45z3h6fBcYYrKynja1s,&amp;typo=1">Minutes</a></div>
+</td>
+</tr>
+<tr>
+<td>
+<div>September 28</div>
+</td>
+<td>
+<div><a href="https://web.archive.org/web/20181105195539/https://linkprotect.cudasvc.com/url?a=http%3a%2f%2fapps.pittsburghpa.gov%2fredtail%2fimages%2f3803_AGENDASeptember282018BoardMeeting.pdf&amp;c=E,1,5iuAg_yhRpWCjLyioQBtuq4rOZatvuYKyVcyxVR6eZvyPhqzwMEWhCwMoHdtHY9og2ufqjaYttDQJf2gvwV4VIHimAB-8Eq1kEwzMU47xyzxNAE2rHOBEQVC&amp;typo=1">Agenda&nbsp;</a></div>
+<div><a href="https://web.archive.org/web/20181105195539/https://linkprotect.cudasvc.com/url?a=http%3a%2f%2fapps.pittsburghpa.gov%2fredtail%2fimages%2f4070_September282018SignedMinutes.pdf&amp;c=E,1,gACbBUvwKsPcglG---inHjlJPhiymnXkPs8BgFAQwcAOAVJrhMzEcttntdsxTuU7SC_c0Y_8eNIckoNFMoU4mzU66W43devlE2znUlZEGVJgFIMaQfovuZo,&amp;typo=1">Minutes</a></div>
+</td>
+</tr>
+<tr>
+<td>
+<div>October 26</div>
+</td>
+<td>
+<div><a href="https://web.archive.org/web/20181105195539/https://linkprotect.cudasvc.com/url?a=http%3a%2f%2fapps.pittsburghpa.gov%2fredtail%2fimages%2f4050_AGENDAfortheOctober262018BoardMeetingREV.pdf&amp;c=E,1,N7BNDhlaRsN9IyX7ZjFjxLy-5ReO_SYH-K-CSiKWfiF2IphGw1JsKfvskRuYu2JT41IZ0DFlJG3K_qh3Wu5BcsQJW8Vok3RfIapSd-jK2KR3t6If62Shtg,,&amp;typo=1">Agenda&nbsp;</a></div>
+<div><a href="https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fna01.safelinks.protection.outlook.com%2f%3furl%3dhttps%253A%252F%252Flinkprotect.cudasvc.com%252Furl%253Fa%253Dhttp%25253a%25252f%25252fapps.pittsburghpa.gov%25252fredtail%25252fimages%25252f4808_October262018BoardMeetingsigned.pdf%2526c%253DE%252C1%252CUWOrwcnpEExiC53emVxw7NVPVaZWkKX7XLu_Q7D3yRQ8sQtVdDv-Mp9zrcmAjyFolZlLVt_3Iu_mbqRBHHwT712_HFFbOSpUb-QMro-I6Ks%252C%2526typo%253D1%26data%3d02%257C01%257Csmyth.welton%2540pittsburghpa.gov%257C7869d6513cdf42a48b3408d68853fe27%257Cf5f47917c90443689120d327cf175591%257C1%257C0%257C636846291661545641%26sdata%3dC2Q60XyT1zOYprxs7fq927KDGd%252F151H8DqYTHPFvUY8%253D%26reserved%3d0&amp;c=E,1,Gas0kV6DiTJdEBTC_RnVbpIYZJg2ip7G8lydel3S0uhyqPF2C2dnKwq7QxDpoKVnOnmIThCGZHUPiKnrh8NDol9OjzqKlErZuP5ZDe_-6qk,&amp;typo=1">Minutes</a></div>
+</td>
+</tr>
+<tr>
+<td>
+<div>November 16</div>
+</td>
+<td>
+<div><a href="https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fna01.safelinks.protection.outlook.com%2f%3furl%3dhttps%253A%252F%252Flinkprotect.cudasvc.com%252Furl%253Fa%253Dhttp%25253a%25252f%25252fapps.pittsburghpa.gov%25252fredtail%25252fimages%25252f4810_AGENDAfortheNovember162018BoardMeeting.pdf%2526c%253DE%252C1%252CRRiid60Ks9td4i0Ktf9rLcCLmgU2EblF4nv2yLvy4OKHpFklng40qkph5eOUUKHJrJfZg5O_xqmjGBE7NULGgDQh-3Uv1qiUDlJL9kT6wrk%252C%2526typo%253D1%26data%3d02%257C01%257Csmyth.welton%2540pittsburghpa.gov%257C7869d6513cdf42a48b3408d68853fe27%257Cf5f47917c90443689120d327cf175591%257C1%257C0%257C636846291661565655%26sdata%3dQmKF5HBVYL3840BctYk7Xxz9nQIH%252BDjmJo1uDXOxkEw%253D%26reserved%3d0&amp;c=E,1,AWzeDrDHkFTZLBfGrkxEc91xzavBn3VbOmM7hrWRwtWCHJ6tPoJU3jtVuEMsZHBh5BFGRsbhz4rO0CaY9qCXZwWUjz7NJ8C50m-IOurZMcpsrJZMOLWj&amp;typo=1">Agenda</a></div>
+<div><a href="https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fna01.safelinks.protection.outlook.com%2f%3furl%3dhttps%253A%252F%252Flinkprotect.cudasvc.com%252Furl%253Fa%253Dhttp%25253a%25252f%25252fapps.pittsburghpa.gov%25252fredtail%25252fimages%25252f4807_November162018BoardMinsSigned.pdf%2526c%253DE%252C1%252CCpKYbGaASwVfNfDUgmEbfytRH7AZ6waNz6l9CgTtAflqeXeUvtpEYyy-7W0YJQWR6V7hAGLPq_GAtLnQ0OD1dvgOCa86TWjs-oz3VQZRVSFVnVHuyvPm%2526typo%253D1%26data%3d02%257C01%257Csmyth.welton%2540pittsburghpa.gov%257C7869d6513cdf42a48b3408d68853fe27%257Cf5f47917c90443689120d327cf175591%257C1%257C0%257C636846291661545641%26sdata%3dF%252B13q1R21dXCD0RhYDliluUL6xS%252BXIJ3d9H47ew63zw%253D%26reserved%3d0&amp;c=E,1,w3EOejSPoj4mSTZ8eLBO_CMkVCNO7d1_rAvFcmexR7Ntlqe5r_meOzSJjU_dNPiRxbJri5RXPTUQqx_vmNZYZN3VJaf4Td_uf57Fubuk17PDirGr&amp;typo=1">Minutes</a></div>
+</td>
+</tr>
+<tr>
+<td>
+<div>December 14</div>
+</td>
+<td>
+<div><a href="https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fna01.safelinks.protection.outlook.com%2f%3furl%3dhttps%253A%252F%252Flinkprotect.cudasvc.com%252Furl%253Fa%253Dhttp%25253a%25252f%25252fapps.pittsburghpa.gov%25252fredtail%25252fimages%25252f4809_AGENDADecember142018BoardMeeting.pdf%2526c%253DE%252C1%252CGwO_nYI69Q6r1Jdm4Wg_sN4_S2PUqBGAe-LrfIzZcMpoaJbOSHVSKaDOHrKRUEISu0C6gxZBfvikaVtDqxR8Jg0UvpdzW8NSybbsiAR7A_3ktNektQxV9JjHGg%252C%252C%2526typo%253D1%26data%3d02%257C01%257Csmyth.welton%2540pittsburghpa.gov%257C7869d6513cdf42a48b3408d68853fe27%257Cf5f47917c90443689120d327cf175591%257C1%257C0%257C636846291661555645%26sdata%3d%252BWR%252FmJS00ilKd2%252BiIqUtLfGbWm9JycYgz8XSuZQINS8%253D%26reserved%3d0&amp;c=E,1,cmM3fn6pPs_7Zd2vh-VPurZaas0qyoPsWAIOGrdNMyO74ExYJqnSItSrf_yp6CbB7irbVECXZb7sbJH2rM4M9fBVDeUhjjzGue_JevAcSg,,&amp;typo=1">Agenda&nbsp;</a></div>
+<div><a href="https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fna01.safelinks.protection.outlook.com%2f%3furl%3dhttps%253A%252F%252Flinkprotect.cudasvc.com%252Furl%253Fa%253Dhttp%25253a%25252f%25252fapps.pittsburghpa.gov%25252fredtail%25252fimages%25252f4811_December142018BoardMinsSigned.pdf%2526c%253DE%252C1%252CYF-gDE_f7-LdnY0DgduqCQyv68gLStsYAlWdukKI34HtqfYdILBbbbx0zVBUVhjOv6dZe7SQd0R_NXQdoip9v6IEmkBJ92m24LrIBSagILr8%2526typo%253D1%26data%3d02%257C01%257Csmyth.welton%2540pittsburghpa.gov%257C7869d6513cdf42a48b3408d68853fe27%257Cf5f47917c90443689120d327cf175591%257C1%257C0%257C636846291661565655%26sdata%3dWkafI4KkQ8DnHWajUdN7X1YWKuwd3DZNikpBytCbYJY%253D%26reserved%3d0&amp;c=E,1,UnCuNjIzp_CjQhxvzGZYPyTZgG5kuRzPJY0TWNpKDkTeWF3jMvbyBTZYBo_r7ElJvAZd42LhfYnlxllCcQsvDYJjoXsNPMPFoZEWoTO-TD9D0sD65EKjNsxl5RDN&amp;typo=1">Minutes</a></div>
+</td>
+</tr>
+</tbody>
+</table>
+<div><br />
+&nbsp;</div>
+<div>To see past board documents, <a href="http://www.pgh2o.com/boardarchive">click here</a>.&nbsp;</div>
+<div>&nbsp;</div>
+<div>&nbsp;</div>
+
+
+</div>
+</div>
+
+
+<div id="sideMenu">
+<td class='linko'>
+
+<ul>
+<li class="title">Who We Are</li>
+<li><a href="http://pgh2o.com/board">PWSA Board</a></li>
+<li><a href="http://pgh2o.com/divisions">Divisions</a></li>
+<li><a href="http://pgh2o.com/staff">Staff</a></li>
+<li><a href="http://pgh2o.com/history">History</a></li>
+<li><a href="http://pgh2o.com/finance">Finance</a></li>
+<li><a href="http://pgh2o.com/newsletters">Newsletters</a></li>
+
+</ul>
+
+</td>
+
+</div>
+</div>
+<br class="clear">
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45362756-1', 'pgh2o.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+
+</html>
